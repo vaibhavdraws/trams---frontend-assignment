@@ -1,4 +1,5 @@
 import { useState } from "react"
+import logo from "../assets/logo.png";
 
 function Navbar() {
 
@@ -10,11 +11,7 @@ function Navbar() {
 
             <div className="container navbar-content">
 
-                <img
-                    src="logo.png"
-                    alt="trams"
-                    className="logo"
-                />
+                <img src={logo} alt="trams" className="logo" />
 
                 <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
                     <li>Home</li>
